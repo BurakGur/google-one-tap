@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install
       - run: npm publish
         if: github.event == 'push'
         env:
@@ -46,7 +45,6 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@burakgur'
-      - run: npm install
       - run: npm publish
         if: github.event == 'push'
         env:
