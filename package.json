@@ -1,24 +1,26 @@
 {
-	"name": "@burakgur/google-one-tap",
-	"version": "1.0.2",
+	"name": "google-one-tap",
+	"version": "1.0.3",
 	"description": "Google One Tap Login",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"repository": "git://github.com/BurakGur/google-one-tap.git",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BurakGur/google-one-tap.git"
+	},
 	"keywords": [
 		"google one tap",
 		"google sign in",
-		"google sign up"
+		"google sign up",
+		"react",
+		"vue"
 	],
 	"author": "Burak Gür <gurbrk@gmail.com>",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/BurakGur/google-one-tap/issues"
 	},
-	"homepage": "https://github.com/BurakGur/google-one-tap#readme",
-	"publishConfig": {
-		"registry":"https://npm.pkg.github.com"
-	}
+	"homepage": "https://github.com/BurakGur/google-one-tap#readme"
 }
