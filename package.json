@@ -1,6 +1,6 @@
 {
 	"name": "google-one-tap",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Google One Tap Login",
 	"main": "index.js",
 	"scripts": {
