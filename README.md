@@ -59,7 +59,14 @@ export default {
 | client_id             | String  |   true   |                             Your application's client ID                             |
 | auto_select           | Boolean |  false   |                             Enables automatic selection.                             | null |
 | cancel_on_tap_outside | Boolean |  false   |              Cancels the prompt if the user clicks outside the prompt.               |
-| context               | String  |  false   | The title in the One Tap prompt. Allowed parameters: "_signin_", "_signup_", "_use_" |
+| context               | String  |  false   | The title in the One Tap prompt. <br />Allowed parameters: "_signin_", "_signup_", "_use_" |
+| login_uri	               | URL  |  false   | The URL of your login endpoint. <br/>The Sign In With Google button redirect UX mode uses this attribute. |
+| prompt_parent_id	               | String  |  false   | The DOM ID of the One Tap prompt container element |
+| nonce	               | String  |  false   | A random string for ID tokens |
+| state_cookie_domain		               | String  |  false   | If you need to call One Tap in the parent domain and its subdomains, <br />pass the parent domain to this field so that a single shared cookie is used. |
+| ux_mode		               | String  |  false   | The Sign In With Google button UX flow <br/> Allowed parameters: "_redirect_", "_popup_" |
+| allowed_parent_origin	               | String-Array  |  false   | The origins that are allowed to embed the intermediate iframe. <br/>One Tap will run in the intermediate iframe mode if this field presents. |
+| itp_support	               | Boolean  |  false   | Enables upgraded One Tap UX on ITP browsers. |
 
 ## Server
 

@@ -4,6 +4,7 @@ function googleOneTap(
     auto_select = false,
     cancel_on_tap_outside = false,
     context = "signin",
+    ...otherOptions
   },
   callback
 ) {
@@ -27,6 +28,7 @@ function googleOneTap(
         auto_select: auto_select,
         cancel_on_tap_outside: cancel_on_tap_outside,
         context: contextValue,
+        ...otherOptions,
       });
       window.google.accounts.id.prompt();
     };
