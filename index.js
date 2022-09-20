@@ -22,15 +22,17 @@ function googleOneTap(
     googleScript.defer = true;
     document.head.appendChild(googleScript);
     window.onload = function () {
-      window.google.accounts.id.initialize({
-        client_id: client_id,
-        callback: callback,
-        auto_select: auto_select,
-        cancel_on_tap_outside: cancel_on_tap_outside,
-        context: contextValue,
-        ...otherOptions,
-      });
-      window.google.accounts.id.prompt();
+      if (window.google) {
+        window.google.accounts.id.initialize({
+          client_id: client_id,
+          callback: callback,
+          auto_select: auto_select,
+          cancel_on_tap_outside: cancel_on_tap_outside,
+          context: contextValue,
+          ...otherOptions,
+        });
+        window.google.accounts.id.prompt();
+      }
     };
   }
 }
