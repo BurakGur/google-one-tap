@@ -21,7 +21,7 @@ function googleOneTap(
     googleScript.async = true;
     googleScript.defer = true;
     document.head.appendChild(googleScript);
-    window.onload = function () {
+    window.onGoogleLibraryLoad = function () {
       if (window.google) {
         window.google.accounts.id.initialize({
           client_id: client_id,
